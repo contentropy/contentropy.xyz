@@ -113,3 +113,8 @@ body {
 .text a[href="https://www.myso.finance/"]:hover {
   color: #000; 
 }
+
+.text a[href="https://www.myso.finance/"] {
+  color: #000; 
+  text-decoration: underline; 
+}
