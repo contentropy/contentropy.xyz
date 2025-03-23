@@ -45,21 +45,7 @@ body {
   position: relative;
 }
 
-.text p:first-child::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 12%;
-  height: 0.4px;
-  background-color: #000;
-}
-
-.text p.divider-text {
-  position: relative;
-}
-
+.text p:first-child::after,
 .text p.divider-text::after {
   content: "";
   position: absolute;
@@ -74,7 +60,7 @@ body {
 .emoticons {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align emoticons to the left */
+  align-items: flex-start;
 }
 
 .emoticons a {
@@ -86,13 +72,16 @@ body {
 }
 
 .emoticons img {
-  width: 22px; /* Adjust the width to 20% smaller than the original size */
-  margin-right: 5px;
-  transition: filter 0.3s ease;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  margin-right: 8px;
+  transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .emoticons a:hover img {
-  filter: brightness(40%);
+  filter: brightness(140%);
+  transform: scale(1.05);
 }
 
 .university {
@@ -106,15 +95,10 @@ body {
 }
 
 .text a[href="https://www.myso.finance/"] {
-  color: #000; 
-  text-decoration: none; 
+  color: #000;
+  text-decoration: underline;
 }
 
 .text a[href="https://www.myso.finance/"]:hover {
-  color: #000; 
-}
-
-.text a[href="https://www.myso.finance/"] {
-  color: #000; 
-  text-decoration: underline; 
+  color: #000;
 }
