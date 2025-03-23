@@ -102,3 +102,21 @@ body {
 .text a[href="https://www.myso.finance/"]:hover {
   color: #000;
 }
+.inline-icons {
+  display: inline-flex;
+  gap: 8px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.inline-icons img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.inline-icons a:hover img {
+  filter: brightness(140%);
+  transform: scale(1.05);
+}
