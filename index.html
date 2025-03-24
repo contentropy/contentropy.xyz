@@ -8,17 +8,19 @@
   <link rel="stylesheet" type="text/css" href="site.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-    .text p.divider-text {
+    .text p.divider-text,
+    .text p:first-child {
       position: relative;
       padding-top: 20px;
       padding-bottom: 20px;
     }
-    .text p.divider-text::after {
+    .text p.divider-text::after,
+    .text p:first-child::after {
       content: "";
       position: absolute;
-      top: 50%;
+      bottom: 0;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       width: 12%;
       height: 0.4px;
       background-color: #000;
