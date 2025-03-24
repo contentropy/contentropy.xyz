@@ -77,7 +77,7 @@ body {
 
 /* Bigger & centered Medium & MYSO */
 .inline-icons img[alt="Medium"] {
-  transform: scale(1.6) translateY(-2px);
+  transform: scale(1.6) translateY(-1px);
   filter: brightness(0);
 }
 
