@@ -104,12 +104,6 @@ body {
   filter: brightness(0);
 }
 
-/* Telegram remains colored */
-.inline-icons img[alt="Telegram"],
-.inline-icons a:hover img[alt="Telegram"] {
-  filter: none;
-}
-
 .university {
   display: inline-flex;
   align-items: center;
