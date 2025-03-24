@@ -55,9 +55,9 @@ body {
   justify-content: center;
   width: 18px;
   height: 18px;
+  vertical-align: middle;
 }
 
-/* Smaller X & Telegram */
 .inline-icons a[href*="x.com"],
 .inline-icons img[alt="X"],
 .inline-icons a[href*="t.me"],
@@ -70,17 +70,19 @@ body {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  vertical-align: middle;
+  transform-origin: center center;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Bigger & black Medium & MYSO */
+/* Bigger & centered Medium & MYSO */
 .inline-icons img[alt="Medium"] {
-  transform: scale(1.6);
+  transform: scale(1.6) translateY(-2px);
   filter: brightness(0);
 }
 
 .inline-icons img[alt="MYSO"] {
-  transform: scale(1.5);
+  transform: scale(1.5) translateY(-1px);
   filter: brightness(0);
 }
 
@@ -91,18 +93,18 @@ body {
   cursor: pointer;
 }
 
-/* Combined scale + black on hover for Medium & MYSO */
+/* Combined scale + translation on hover */
 .inline-icons a:hover img[alt="Medium"] {
-  transform: scale(1.6) scale(1.1);
+  transform: scale(1.6) scale(1.1) translateY(-2px);
   filter: brightness(0);
 }
 
 .inline-icons a:hover img[alt="MYSO"] {
-  transform: scale(1.5) scale(1.1);
+  transform: scale(1.5) scale(1.1) translateY(-1px);
   filter: brightness(0);
 }
 
-/* Telegram stays colored */
+/* Telegram remains colored */
 .inline-icons img[alt="Telegram"],
 .inline-icons a:hover img[alt="Telegram"] {
   filter: none;
