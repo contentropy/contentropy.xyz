@@ -57,6 +57,22 @@ body {
   height: 18px;
 }
 
+/* Smaller X & Telegram */
+.inline-icons a[href*="x.com"],
+.inline-icons img[alt="X"],
+.inline-icons a[href*="t.me"],
+.inline-icons img[alt="Telegram"] {
+  width: 16px;
+  height: 16px;
+}
+
+/* Scale Medium & MYSO to match */
+.inline-icons img[alt="Medium"],
+.inline-icons img[alt="MYSO"] {
+  transform: scale(1.3);
+  transform-origin: center;
+}
+
 .inline-icons img {
   width: 100%;
   height: 100%;
@@ -64,13 +80,12 @@ body {
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Scale up Medium & MYSO to match other icons */
-.inline-icons img[alt="Medium"],
-.inline-icons img[alt="MYSO"] {
-  transform: scale(1.3);
-  transform-origin: center;
+/* Telegram monochrome */
+.inline-icons img[alt="Telegram"] {
+  filter: grayscale(100%) brightness(0);
 }
 
+/* Hover effects */
 .inline-icons a:hover img {
   filter: brightness(1.4);
   transform: scale(1.1);
@@ -81,6 +96,11 @@ body {
 .inline-icons a:hover img[alt="Medium"],
 .inline-icons a:hover img[alt="MYSO"] {
   transform: scale(1.3) scale(1.1);
+}
+
+/* Keep Telegram black on hover */
+.inline-icons a:hover img[alt="Telegram"] {
+  filter: grayscale(100%) brightness(0);
 }
 
 .university {
