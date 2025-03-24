@@ -7,13 +7,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="site.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <style>
+   <style>
     .divider-line {
       display: block;
       width: 12%;
       height: 0.4px;
       background-color: #000;
       margin: 20px auto;
+    }
+
+    .inline-icons {
+      display: inline-flex;
+      gap: 8px;
+      margin-left: 6px;
+      vertical-align: middle;
+    }
+
+    .inline-icons img {
+      width: 20px;
+      height: 20px;
+      object-fit: cover;
+      transition: filter 0.3s ease, transform 0.3s ease;
+    }
+
+    .inline-icons a:hover img {
+      filter: brightness(140%);
+      transform: scale(1.1);
     }
   </style>
 </head>
