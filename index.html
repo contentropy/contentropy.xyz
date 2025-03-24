@@ -7,6 +7,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="site.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .text p.divider-text {
+      position: relative;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .text p.divider-text::after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 12%;
+      height: 0.4px;
+      background-color: #000;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -20,7 +37,7 @@
         <p>Contributing @ <a href="https://www.myso.finance/"> <b>MYSO Finance</b></a> - onchain structured products for DAOs, asset managers, and HNWIs</p>
         <p>Trader and onchain degen @ SOL, ETH, and many more chains </p>
 
-        <p class="divider-text"></p> <!-- Re-added divider-text for consistent spacing and style -->
+        <p class="divider-text"></p>
         <p>
           Connect w/me and read (
           <b>@contentropy</b>
