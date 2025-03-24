@@ -41,34 +41,19 @@ body {
   width: 100%;
 }
 
-.text p:first-child {
-  position: relative;
-}
-
-.text p:first-child::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 12%;
-  height: 0.4px;
-  background-color: #000;
-}
-
-.text p.divider-text {
-  position: relative;
-}
-
+/* Remove legacy divider styles */
+.text p:first-child::after,
 .text p.divider-text::after {
-  content: "";
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
+  content: none !important;
+}
+
+/* New universal divider line */
+.divider-line {
+  display: block;
   width: 12%;
   height: 0.4px;
   background-color: #000;
+  margin: 20px auto;
 }
 
 .inline-icons {
