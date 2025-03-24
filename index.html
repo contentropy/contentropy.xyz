@@ -8,22 +8,12 @@
   <link rel="stylesheet" type="text/css" href="site.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <style>
-    .text p.divider-text,
-    .text p:first-child {
-      position: relative;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-    .text p.divider-text::after,
-    .text p:first-child::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
+    .divider-line {
+      display: block;
       width: 12%;
       height: 0.4px;
       background-color: #000;
+      margin: 20px auto;
     }
   </style>
 </head>
@@ -35,11 +25,11 @@
       </div>
       <div class="text">
         <p>Hi there. Welcome - here's some of what I'm working on ↴ </p>
-        <div class="divider"></div>
+        <span class="divider-line"></span>
         <p>Contributing @ <a href="https://www.myso.finance/"> <b>MYSO Finance</b></a> - onchain structured products for DAOs, asset managers, and HNWIs</p>
         <p>Trader and onchain degen @ SOL, ETH, and many more chains </p>
 
-        <p class="divider-text"></p>
+        <span class="divider-line"></span>
         <p>
           Connect w/me and read (
           <b>@contentropy</b>
