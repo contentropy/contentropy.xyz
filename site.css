@@ -20,7 +20,6 @@ body {
 }
 
 .image {
-  position: relative;
   margin-right: 20px;
   text-align: center;
 }
@@ -32,22 +31,9 @@ body {
 }
 
 .text {
-  flex: 1;
   max-width: 400px;
-  position: relative;
 }
 
-.text p {
-  width: 100%;
-}
-
-/* Remove legacy divider styles */
-.text p:first-child::after,
-.text p.divider-text::after {
-  content: none !important;
-}
-
-/* New universal divider line */
 .divider-line {
   display: block;
   width: 12%;
@@ -56,17 +42,19 @@ body {
   margin: 20px auto;
 }
 
+/* INLINE ICONS */
 .inline-icons {
   display: inline-flex;
   gap: 8px;
-  margin-left: 6px;
   vertical-align: middle;
 }
 
 .inline-icons a {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
 }
 
 .inline-icons img {
